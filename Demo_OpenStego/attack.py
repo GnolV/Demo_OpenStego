@@ -115,7 +115,7 @@ if __name__ == "__main__":
     img_dir = input("Enter image directory: ")
     img_format = img_dir.split(".")
     format = img_format[1]
-    img_locat = "./Attacked"
+    img_locat = "./Attacked/"
     img = cv2.imread(img_dir)
     img_blur = Attack.blur(img)
     cv2.imwrite(img_locat + "img_blur." + format, img_blur)
